@@ -37,9 +37,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo $response; // JSON trả về từ qrserver
         }
     } else {
-        echo json_encode(['error' => 'Thiếu base64String']);
+        echo json_encode(['error' => 'Missing base64String']);
     }
 } else {
-    echo json_encode(['error' => 'Phải dùng phương thức POST']);
+    echo json_encode(['error' => 'Must be POST.']);
 }
 ?>
